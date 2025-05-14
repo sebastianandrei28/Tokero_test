@@ -1,0 +1,1644 @@
+<testsuites id="" name="" tests="30" failures="8" skipped="0" errors="0" time="197.430826">
+<testsuite name="createAccount.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="chromium" tests="3" failures="0" skipped="0" time="30.235" errors="0">
+<testcase name="Check if Create Account is visible" classname="createAccount.spec.ts" time="8.341">
+</testcase>
+<testcase name="Check if Create account button redirects to register page" classname="createAccount.spec.ts" time="7.814">
+</testcase>
+<testcase name="Check successfully register flow" classname="createAccount.spec.ts" time="14.08">
+</testcase>
+</testsuite>
+<testsuite name="footerLinkCheck.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="chromium" tests="4" failures="2" skipped="0" time="75.756" errors="0">
+<testcase name="Footer - TOKERO column" classname="footerLinkCheck.spec.ts" time="26.495">
+<failure message="footerLinkCheck.spec.ts:150:5 Footer - TOKERO column" type="FAILURE">
+<![CDATA[  [chromium] › footerLinkCheck.spec.ts:150:5 › Footer - TOKERO column ──────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/careers/"
+    Received: "https://tokero.team/"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:159:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:158:14
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "careers/"
+    Received: "https://tokero.team/"
+
+      80 |       log("success", item);
+      81 |     } else {
+    > 82 |       expect.soft(item).toBe(listOfFooters[columnNumber][index]);
+         |                         ^
+      83 |       if (item === listOfFooters[columnNumber][index]) {
+      84 |         log("success", item);
+      85 |       } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:82:25)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:159:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:158:14
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:163:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:162:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:163:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:162:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-chromium\error-context-0.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-chromium\error-context-1.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-chromium\error-context-2.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-chromium\error-context-3.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-chromium\error-context-4.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-chromium\error-context-5.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-chromium\error-context-6.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-chromium\error-context-7.md
+]]>
+</failure>
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 1 contains 8 <li> items.
+✅ /en/about-us/
+✅ /en/community/
+✅ /en/team/
+✅ /en/blog/
+❌ Expected:/en/careers/, Received: https://tokero.team/
+✅ /en/webinars/
+✅ /en/launchpad/
+✅ /en/downloads/
+❌ Provided URL is not functional:https://tokero.dev/en/about-us/
+✅ The URL is validated: https://tokero.dev/en/community/
+✅ The URL is validated: https://tokero.dev/en/team/
+✅ The URL is validated: https://tokero.dev/en/blog/
+❌ Provided URL is not functional:https://tokero.dev/en/careers/
+✅ The URL is validated: https://tokero.dev/en/webinars/
+✅ The URL is validated: https://tokero.dev/en/launchpad/
+✅ The URL is validated: https://tokero.dev/en/downloads/
+✅ The URL is validated: https://tokero.dev/en/about-us/
+✅ The URL is validated: https://tokero.dev/en/community/
+✅ The URL is validated: https://tokero.dev/en/team/
+✅ The URL is validated: https://tokero.dev/en/blog/
+❌ Provided URL is not functional:https://tokero.devhttps://tokero.team/
+❌ Provided URL is not functional:https://tokero.dev/en/webinars/
+❌ Provided URL is not functional:https://tokero.dev/en/launchpad/
+❌ Provided URL is not functional:https://tokero.dev/en/downloads/
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-chromium\error-context-0.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-chromium\error-context-1.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-chromium\error-context-2.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-chromium\error-context-3.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-chromium\error-context-4.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-chromium\error-context-5.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-chromium\error-context-6.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-chromium\error-context-7.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Services column" classname="footerLinkCheck.spec.ts" time="18.5">
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 2 contains 10 <li> items.
+✅ /en/exchange/
+✅ /en/corporate/
+✅ /en/academy/
+✅ /en/page/pro/
+✅ /en/page/tokero-ventures/
+✅ /en/crypto-spots/romania/
+✅ /en/referral-program/
+✅ /en/contact/
+✅ /en/get-listed/
+✅ The URL is validated: https://tokero.dev/en/exchange/
+✅ The URL is validated: https://tokero.dev/en/corporate/
+✅ The URL is validated: https://tokero.dev/en/academy/
+✅ The URL is validated: https://tokero.dev/en/page/pro/
+✅ The URL is validated: https://tokero.dev/en/page/tokero-ventures/
+✅ The URL is validated: https://tokero.dev/en/crypto-spots/romania/
+✅ The URL is validated: https://tokero.dev/en/referral-program/
+✅ The URL is validated: https://tokero.dev/en/contact/
+✅ The URL is validated: https://tokero.dev/en/get-listed/
+✅ The URL is validated: https://tokero.dev/en/exchange/
+✅ The URL is validated: https://tokero.dev/en/corporate/
+✅ The URL is validated: https://tokero.dev/en/academy/
+✅ The URL is validated: https://tokero.dev/en/page/pro/
+✅ The URL is validated: https://tokero.dev/en/page/tokero-ventures/
+✅ The URL is validated: https://tokero.dev/en/crypto-spots/romania/
+✅ The URL is validated: https://tokero.dev/en/referral-program/
+✅ The URL is validated: https://tokero.dev/en/contact/
+✅ The URL is validated: https://tokero.dev/en/get-listed/
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Polices and Rules column" classname="footerLinkCheck.spec.ts" time="13.048">
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 3 contains 6 <li> items.
+✅ /en/policies/
+✅ /en/policies/terms-of-service/
+✅ /en/policies/gdpr/
+✅ /en/policies/privacy/
+✅ /en/policies/kyc/
+✅ /en/policies/cookies/
+✅ The URL is validated: https://tokero.dev/en/policies/
+✅ The URL is validated: https://tokero.dev/en/policies/terms-of-service/
+✅ The URL is validated: https://tokero.dev/en/policies/gdpr/
+✅ The URL is validated: https://tokero.dev/en/policies/privacy/
+✅ The URL is validated: https://tokero.dev/en/policies/kyc/
+✅ The URL is validated: https://tokero.dev/en/policies/cookies/
+✅ The URL is validated: https://tokero.dev/en/policies/
+✅ The URL is validated: https://tokero.dev/en/policies/terms-of-service/
+✅ The URL is validated: https://tokero.dev/en/policies/gdpr/
+✅ The URL is validated: https://tokero.dev/en/policies/privacy/
+✅ The URL is validated: https://tokero.dev/en/policies/kyc/
+✅ The URL is validated: https://tokero.dev/en/policies/cookies/
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Info column" classname="footerLinkCheck.spec.ts" time="17.713">
+<failure message="footerLinkCheck.spec.ts:249:5 Footer - Info column" type="FAILURE">
+<![CDATA[  [chromium] › footerLinkCheck.spec.ts:249:5 › Footer - Info column ────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/https://www.anpc.ro/"
+    Received: "https://www.anpc.ro/"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:258:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:257:14
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show"
+    Received: "https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:258:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:257:14
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:262:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:261:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-chromium\error-context-0.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-chromium\error-context-1.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-chromium\error-context-2.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-chromium\error-context-3.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-chromium\error-context-4.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-chromium\error-context-5.md
+]]>
+</failure>
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 4 contains 7 <li> items.
+✅ /en/policies/fees/
+✅ /en/policies/minimums-and-options/
+✅ /en/policies/answering-times/
+✅ /en/info/
+✅ /en/non-banking-days/
+✅ https://www.anpc.ro/
+✅ https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+✅ The URL is validated: https://tokero.dev/en/policies/fees/
+✅ The URL is validated: https://tokero.dev/en/policies/minimums-and-options/
+✅ The URL is validated: https://tokero.dev/en/policies/answering-times/
+✅ The URL is validated: https://tokero.dev/en/info/
+❌ Provided URL is not functional:https://tokero.dev/en/non-banking-days/
+✅ The URL is validated: https://tokero.dev/en/https://www.anpc.ro/
+✅ The URL is validated: https://tokero.dev/en/https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+✅ The URL is validated: https://tokero.dev/en/policies/fees/
+✅ The URL is validated: https://tokero.dev/en/policies/minimums-and-options/
+✅ The URL is validated: https://tokero.dev/en/policies/answering-times/
+✅ The URL is validated: https://tokero.dev/en/info/
+❌ Provided URL is not functional:https://tokero.dev/en/non-banking-days/
+❌ Provided URL is not functional:https://tokero.devhttps://www.anpc.ro/
+❌ Provided URL is not functional:https://tokero.devhttps://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-chromium\error-context-0.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-chromium\error-context-1.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-chromium\error-context-2.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-chromium\error-context-3.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-chromium\error-context-4.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-chromium\error-context-5.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="loginAccount.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="chromium" tests="3" failures="0" skipped="0" time="10.848" errors="0">
+<testcase name="Check if login button is visible" classname="loginAccount.spec.ts" time="3.127">
+</testcase>
+<testcase name="Check if loggin button redirects to loggin page" classname="loginAccount.spec.ts" time="3.627">
+</testcase>
+<testcase name="Check if loggin is successfull" classname="loginAccount.spec.ts" time="4.094">
+</testcase>
+</testsuite>
+<testsuite name="createAccount.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="firefox" tests="3" failures="0" skipped="0" time="35.622" errors="0">
+<testcase name="Check if Create Account is visible" classname="createAccount.spec.ts" time="6.934">
+</testcase>
+<testcase name="Check if Create account button redirects to register page" classname="createAccount.spec.ts" time="9.928">
+</testcase>
+<testcase name="Check successfully register flow" classname="createAccount.spec.ts" time="18.76">
+</testcase>
+</testsuite>
+<testsuite name="footerLinkCheck.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="firefox" tests="4" failures="2" skipped="0" time="181.733" errors="0">
+<testcase name="Footer - TOKERO column" classname="footerLinkCheck.spec.ts" time="50.302">
+<failure message="footerLinkCheck.spec.ts:150:5 Footer - TOKERO column" type="FAILURE">
+<![CDATA[  [firefox] › footerLinkCheck.spec.ts:150:5 › Footer - TOKERO column ───────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/careers/"
+    Received: "https://tokero.team/"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:159:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:158:14
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "careers/"
+    Received: "https://tokero.team/"
+
+      80 |       log("success", item);
+      81 |     } else {
+    > 82 |       expect.soft(item).toBe(listOfFooters[columnNumber][index]);
+         |                         ^
+      83 |       if (item === listOfFooters[columnNumber][index]) {
+      84 |         log("success", item);
+      85 |       } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:82:25)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:159:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:158:14
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:163:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:162:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-firefox\error-context-0.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-firefox\error-context-1.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-firefox\error-context-2.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-firefox\error-context-3.md
+]]>
+</failure>
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 1 contains 8 <li> items.
+✅ /en/about-us/
+✅ /en/community/
+✅ /en/team/
+✅ /en/blog/
+❌ Expected:/en/careers/, Received: https://tokero.team/
+✅ /en/webinars/
+✅ /en/launchpad/
+✅ /en/downloads/
+✅ The URL is validated: https://tokero.dev/en/about-us/
+✅ The URL is validated: https://tokero.dev/en/community/
+✅ The URL is validated: https://tokero.dev/en/team/
+✅ The URL is validated: https://tokero.dev/en/blog/
+❌ Provided URL is not functional:https://tokero.dev/en/careers/
+✅ The URL is validated: https://tokero.dev/en/webinars/
+✅ The URL is validated: https://tokero.dev/en/launchpad/
+✅ The URL is validated: https://tokero.dev/en/downloads/
+✅ The URL is validated: https://tokero.dev/en/about-us/
+✅ The URL is validated: https://tokero.dev/en/community/
+✅ The URL is validated: https://tokero.dev/en/team/
+✅ The URL is validated: https://tokero.dev/en/blog/
+❌ Provided URL is not functional:https://tokero.devhttps://tokero.team/
+✅ The URL is validated: https://tokero.dev/en/webinars/
+✅ The URL is validated: https://tokero.dev/en/launchpad/
+✅ The URL is validated: https://tokero.dev/en/downloads/
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-firefox\error-context-0.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-firefox\error-context-1.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-firefox\error-context-2.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-firefox\error-context-3.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Services column" classname="footerLinkCheck.spec.ts" time="54.157">
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 2 contains 10 <li> items.
+✅ /en/exchange/
+✅ /en/corporate/
+✅ /en/academy/
+✅ /en/page/pro/
+✅ /en/page/tokero-ventures/
+✅ /en/crypto-spots/romania/
+✅ /en/referral-program/
+✅ /en/contact/
+✅ /en/get-listed/
+✅ The URL is validated: https://tokero.dev/en/exchange/
+✅ The URL is validated: https://tokero.dev/en/corporate/
+✅ The URL is validated: https://tokero.dev/en/academy/
+✅ The URL is validated: https://tokero.dev/en/page/pro/
+✅ The URL is validated: https://tokero.dev/en/page/tokero-ventures/
+✅ The URL is validated: https://tokero.dev/en/crypto-spots/romania/
+✅ The URL is validated: https://tokero.dev/en/referral-program/
+✅ The URL is validated: https://tokero.dev/en/contact/
+✅ The URL is validated: https://tokero.dev/en/get-listed/
+✅ The URL is validated: https://tokero.dev/en/exchange/
+✅ The URL is validated: https://tokero.dev/en/corporate/
+✅ The URL is validated: https://tokero.dev/en/academy/
+✅ The URL is validated: https://tokero.dev/en/page/pro/
+✅ The URL is validated: https://tokero.dev/en/page/tokero-ventures/
+✅ The URL is validated: https://tokero.dev/en/crypto-spots/romania/
+✅ The URL is validated: https://tokero.dev/en/referral-program/
+✅ The URL is validated: https://tokero.dev/en/contact/
+✅ The URL is validated: https://tokero.dev/en/get-listed/
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Polices and Rules column" classname="footerLinkCheck.spec.ts" time="36.904">
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 3 contains 6 <li> items.
+✅ /en/policies/
+✅ /en/policies/terms-of-service/
+✅ /en/policies/gdpr/
+✅ /en/policies/privacy/
+✅ /en/policies/kyc/
+✅ /en/policies/cookies/
+✅ The URL is validated: https://tokero.dev/en/policies/
+✅ The URL is validated: https://tokero.dev/en/policies/terms-of-service/
+✅ The URL is validated: https://tokero.dev/en/policies/gdpr/
+✅ The URL is validated: https://tokero.dev/en/policies/privacy/
+✅ The URL is validated: https://tokero.dev/en/policies/kyc/
+✅ The URL is validated: https://tokero.dev/en/policies/cookies/
+✅ The URL is validated: https://tokero.dev/en/policies/
+✅ The URL is validated: https://tokero.dev/en/policies/terms-of-service/
+✅ The URL is validated: https://tokero.dev/en/policies/gdpr/
+✅ The URL is validated: https://tokero.dev/en/policies/privacy/
+✅ The URL is validated: https://tokero.dev/en/policies/kyc/
+✅ The URL is validated: https://tokero.dev/en/policies/cookies/
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Info column" classname="footerLinkCheck.spec.ts" time="40.37">
+<failure message="footerLinkCheck.spec.ts:249:5 Footer - Info column" type="FAILURE">
+<![CDATA[  [firefox] › footerLinkCheck.spec.ts:249:5 › Footer - Info column ─────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/https://www.anpc.ro/"
+    Received: "https://www.anpc.ro/"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:258:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:257:14
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show"
+    Received: "https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:258:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:257:14
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:262:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:261:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-firefox\error-context-0.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-firefox\error-context-1.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-firefox\error-context-2.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-firefox\error-context-3.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-firefox\error-context-4.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-firefox\error-context-5.md
+]]>
+</failure>
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 4 contains 7 <li> items.
+✅ /en/policies/fees/
+✅ /en/policies/minimums-and-options/
+✅ /en/policies/answering-times/
+✅ /en/info/
+✅ /en/non-banking-days/
+✅ https://www.anpc.ro/
+✅ https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+✅ The URL is validated: https://tokero.dev/en/policies/fees/
+✅ The URL is validated: https://tokero.dev/en/policies/minimums-and-options/
+✅ The URL is validated: https://tokero.dev/en/policies/answering-times/
+✅ The URL is validated: https://tokero.dev/en/info/
+❌ Provided URL is not functional:https://tokero.dev/en/non-banking-days/
+✅ The URL is validated: https://tokero.dev/en/https://www.anpc.ro/
+✅ The URL is validated: https://tokero.dev/en/https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+✅ The URL is validated: https://tokero.dev/en/policies/fees/
+✅ The URL is validated: https://tokero.dev/en/policies/minimums-and-options/
+✅ The URL is validated: https://tokero.dev/en/policies/answering-times/
+✅ The URL is validated: https://tokero.dev/en/info/
+❌ Provided URL is not functional:https://tokero.dev/en/non-banking-days/
+❌ Provided URL is not functional:https://tokero.devhttps://www.anpc.ro/
+❌ Provided URL is not functional:https://tokero.devhttps://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-firefox\error-context-0.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-firefox\error-context-1.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-firefox\error-context-2.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-firefox\error-context-3.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-firefox\error-context-4.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-firefox\error-context-5.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="loginAccount.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="firefox" tests="3" failures="0" skipped="0" time="27.645" errors="0">
+<testcase name="Check if login button is visible" classname="loginAccount.spec.ts" time="8.629">
+</testcase>
+<testcase name="Check if loggin button redirects to loggin page" classname="loginAccount.spec.ts" time="7.306">
+</testcase>
+<testcase name="Check if loggin is successfull" classname="loginAccount.spec.ts" time="11.71">
+</testcase>
+</testsuite>
+<testsuite name="createAccount.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="webkit" tests="3" failures="0" skipped="0" time="33.898" errors="0">
+<testcase name="Check if Create Account is visible" classname="createAccount.spec.ts" time="9.186">
+</testcase>
+<testcase name="Check if Create account button redirects to register page" classname="createAccount.spec.ts" time="11.747">
+</testcase>
+<testcase name="Check successfully register flow" classname="createAccount.spec.ts" time="12.965">
+</testcase>
+</testsuite>
+<testsuite name="footerLinkCheck.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="webkit" tests="4" failures="4" skipped="0" time="259.002" errors="0">
+<testcase name="Footer - TOKERO column" classname="footerLinkCheck.spec.ts" time="62.344">
+<failure message="footerLinkCheck.spec.ts:150:5 Footer - TOKERO column" type="FAILURE">
+<![CDATA[  [webkit] › footerLinkCheck.spec.ts:150:5 › Footer - TOKERO column ────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/careers/"
+    Received: "https://tokero.team/"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:159:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:158:14
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "careers/"
+    Received: "https://tokero.team/"
+
+      80 |       log("success", item);
+      81 |     } else {
+    > 82 |       expect.soft(item).toBe(listOfFooters[columnNumber][index]);
+         |                         ^
+      83 |       if (item === listOfFooters[columnNumber][index]) {
+      84 |         log("success", item);
+      85 |       } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:82:25)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:159:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:158:14
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:163:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:162:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:163:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:162:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:173:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:172:3
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-0.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-1.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-2.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-3.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-4.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-5.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-6.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-7.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-8.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---TOKERO-column-webkit\error-context-9.md
+]]>
+</failure>
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 1 contains 8 <li> items.
+✅ /en/about-us/
+✅ /en/community/
+✅ /en/team/
+✅ /en/blog/
+❌ Expected:/en/careers/, Received: https://tokero.team/
+✅ /en/webinars/
+✅ /en/launchpad/
+✅ /en/downloads/
+✅ The URL is validated: https://tokero.dev/en/about-us/
+✅ The URL is validated: https://tokero.dev/en/community/
+✅ The URL is validated: https://tokero.dev/en/team/
+✅ The URL is validated: https://tokero.dev/en/blog/
+❌ Provided URL is not functional:https://tokero.dev/en/careers/
+❌ Provided URL is not functional:https://tokero.dev/en/webinars/
+✅ The URL is validated: https://tokero.dev/en/launchpad/
+✅ The URL is validated: https://tokero.dev/en/downloads/
+❌ Provided URL is not functional:https://tokero.dev/en/about-us/
+❌ Provided URL is not functional:https://tokero.dev/en/community/
+✅ The URL is validated: https://tokero.dev/en/team/
+❌ Provided URL is not functional:https://tokero.dev/en/blog/
+❌ Provided URL is not functional:https://tokero.devhttps://tokero.team/
+✅ The URL is validated: https://tokero.dev/en/webinars/
+❌ Provided URL is not functional:https://tokero.dev/en/launchpad/
+❌ Provided URL is not functional:https://tokero.dev/en/downloads/
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-0.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-1.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-2.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-3.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-4.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-5.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-6.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-7.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-8.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---TOKERO-column-webkit\error-context-9.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Services column" classname="footerLinkCheck.spec.ts" time="87.524">
+<failure message="footerLinkCheck.spec.ts:183:5 Footer - Services column" type="FAILURE">
+<![CDATA[  [webkit] › footerLinkCheck.spec.ts:183:5 › Footer - Services column ──────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:196:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:195:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:196:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:195:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:196:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:195:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:196:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:195:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:206:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:205:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:206:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:205:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:206:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:205:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:206:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:205:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:206:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:205:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:206:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:205:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:206:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:205:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:206:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:205:3
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-0.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-1.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-2.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-3.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-4.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-5.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-6.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-7.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-8.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-9.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-10.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Services-column-webkit\error-context-11.md
+]]>
+</failure>
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 2 contains 10 <li> items.
+✅ /en/exchange/
+✅ /en/corporate/
+✅ /en/academy/
+✅ /en/page/pro/
+✅ /en/page/tokero-ventures/
+✅ /en/crypto-spots/romania/
+✅ /en/referral-program/
+✅ /en/contact/
+✅ /en/get-listed/
+✅ The URL is validated: https://tokero.dev/en/exchange/
+✅ The URL is validated: https://tokero.dev/en/corporate/
+✅ The URL is validated: https://tokero.dev/en/academy/
+✅ The URL is validated: https://tokero.dev/en/page/pro/
+✅ The URL is validated: https://tokero.dev/en/page/tokero-ventures/
+❌ Provided URL is not functional:https://tokero.dev/en/crypto-spots/romania/
+❌ Provided URL is not functional:https://tokero.dev/en/referral-program/
+❌ Provided URL is not functional:https://tokero.dev/en/contact/
+❌ Provided URL is not functional:https://tokero.dev/en/get-listed/
+❌ Provided URL is not functional:https://tokero.dev/en/exchange/
+❌ Provided URL is not functional:https://tokero.dev/en/corporate/
+✅ The URL is validated: https://tokero.dev/en/academy/
+❌ Provided URL is not functional:https://tokero.dev/en/page/pro/
+❌ Provided URL is not functional:https://tokero.dev/en/page/tokero-ventures/
+❌ Provided URL is not functional:https://tokero.dev/en/crypto-spots/romania/
+❌ Provided URL is not functional:https://tokero.dev/en/referral-program/
+❌ Provided URL is not functional:https://tokero.dev/en/contact/
+❌ Provided URL is not functional:https://tokero.dev/en/get-listed/
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-0.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-1.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-2.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-3.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-4.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-5.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-6.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-7.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-8.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-9.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-10.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Services-column-webkit\error-context-11.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Polices and Rules column" classname="footerLinkCheck.spec.ts" time="48.555">
+<failure message="footerLinkCheck.spec.ts:216:5 Footer - Polices and Rules column" type="FAILURE">
+<![CDATA[  [webkit] › footerLinkCheck.spec.ts:216:5 › Footer - Polices and Rules column › Dynamic Validation Of Links from site 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:239:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:238:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:239:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:238:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:239:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:238:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:239:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:238:3
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Polices-and-Rules-column-webkit\error-context-0.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Polices-and-Rules-column-webkit\error-context-1.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Polices-and-Rules-column-webkit\error-context-2.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Polices-and-Rules-column-webkit\error-context-3.md
+]]>
+</failure>
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 3 contains 6 <li> items.
+✅ /en/policies/
+✅ /en/policies/terms-of-service/
+✅ /en/policies/gdpr/
+✅ /en/policies/privacy/
+✅ /en/policies/kyc/
+✅ /en/policies/cookies/
+✅ The URL is validated: https://tokero.dev/en/policies/
+✅ The URL is validated: https://tokero.dev/en/policies/terms-of-service/
+✅ The URL is validated: https://tokero.dev/en/policies/gdpr/
+✅ The URL is validated: https://tokero.dev/en/policies/privacy/
+✅ The URL is validated: https://tokero.dev/en/policies/kyc/
+✅ The URL is validated: https://tokero.dev/en/policies/cookies/
+❌ Provided URL is not functional:https://tokero.dev/en/policies/
+✅ The URL is validated: https://tokero.dev/en/policies/terms-of-service/
+❌ Provided URL is not functional:https://tokero.dev/en/policies/gdpr/
+❌ Provided URL is not functional:https://tokero.dev/en/policies/privacy/
+✅ The URL is validated: https://tokero.dev/en/policies/kyc/
+❌ Provided URL is not functional:https://tokero.dev/en/policies/cookies/
+
+[[ATTACHMENT|footerLinkCheck-Footer---Polices-and-Rules-column-webkit\error-context-0.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Polices-and-Rules-column-webkit\error-context-1.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Polices-and-Rules-column-webkit\error-context-2.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Polices-and-Rules-column-webkit\error-context-3.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Footer - Info column" classname="footerLinkCheck.spec.ts" time="60.579">
+<failure message="footerLinkCheck.spec.ts:249:5 Footer - Info column" type="FAILURE">
+<![CDATA[  [webkit] › footerLinkCheck.spec.ts:249:5 › Footer - Info column ──────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/https://www.anpc.ro/"
+    Received: "https://www.anpc.ro/"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:258:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:257:14
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/en/https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show"
+    Received: "https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show"
+
+      76 | ) {
+      77 |   linstOfLinks.map((item: string, index: number) => {
+    > 78 |     expect.soft(item).toBe(`/${lang}/${listOfFooters[columnNumber][index]}`);
+         |                       ^
+      79 |     if (item === `/${lang}/${listOfFooters[columnNumber][index]}`) {
+      80 |       log("success", item);
+      81 |     } else {
+        at map (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:78:23)
+        at staticValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:77:16)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:258:11
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:257:14
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:262:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:261:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:262:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:261:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:262:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:261:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      118 |         log("success", `The URL is validated: ${urlDB}`);
+      119 |       } catch (e) {
+    > 120 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      121 |         log("error", `Provided URL is not functional:${urlDB}`);
+      122 |       }
+      123 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:120:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:262:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:261:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      140 |         log("success", `The URL is validated: ${urlDB}`);
+      141 |       } catch (e) {
+    > 142 |         expect.soft(false).toBeTruthy();
+          |                            ^
+      143 |         log("error", `Provided URL is not functional:${urlDB}`);
+      144 |       }
+      145 |     }
+        at dynamicValidationOfLinks (D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:142:28)
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:272:5
+        at D:\workspace\playwright\Tokero_test\tests\footerLinkCheck.spec.ts:271:3
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-0.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-1.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-2.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-3.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-4.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-5.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-6.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-7.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-8.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-9.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-10.md
+
+    Error Context: ..\test-results\footerLinkCheck-Footer---Info-column-webkit\error-context-11.md
+]]>
+</failure>
+<system-out>
+<![CDATA[ℹ️ Footer contains 8 columns.
+ℹ️ Column 4 contains 7 <li> items.
+✅ /en/policies/fees/
+✅ /en/policies/minimums-and-options/
+✅ /en/policies/answering-times/
+✅ /en/info/
+✅ /en/non-banking-days/
+✅ https://www.anpc.ro/
+✅ https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+✅ The URL is validated: https://tokero.dev/en/policies/fees/
+✅ The URL is validated: https://tokero.dev/en/policies/minimums-and-options/
+✅ The URL is validated: https://tokero.dev/en/policies/answering-times/
+❌ Provided URL is not functional:https://tokero.dev/en/info/
+❌ Provided URL is not functional:https://tokero.dev/en/non-banking-days/
+❌ Provided URL is not functional:https://tokero.dev/en/https://www.anpc.ro/
+❌ Provided URL is not functional:https://tokero.dev/en/https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+❌ Provided URL is not functional:https://tokero.dev/en/policies/fees/
+❌ Provided URL is not functional:https://tokero.dev/en/policies/minimums-and-options/
+✅ The URL is validated: https://tokero.dev/en/policies/answering-times/
+❌ Provided URL is not functional:https://tokero.dev/en/info/
+❌ Provided URL is not functional:https://tokero.dev/en/non-banking-days/
+❌ Provided URL is not functional:https://tokero.devhttps://www.anpc.ro/
+❌ Provided URL is not functional:https://tokero.devhttps://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-0.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-1.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-2.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-3.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-4.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-5.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-6.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-7.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-8.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-9.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-10.md]]
+
+[[ATTACHMENT|footerLinkCheck-Footer---Info-column-webkit\error-context-11.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="loginAccount.spec.ts" timestamp="2025-05-14T08:40:08.327Z" hostname="webkit" tests="3" failures="0" skipped="0" time="25.779" errors="0">
+<testcase name="Check if login button is visible" classname="loginAccount.spec.ts" time="7.827">
+</testcase>
+<testcase name="Check if loggin button redirects to loggin page" classname="loginAccount.spec.ts" time="9.644">
+</testcase>
+<testcase name="Check if loggin is successfull" classname="loginAccount.spec.ts" time="8.308">
+</testcase>
+</testsuite>
+</testsuites>
